@@ -47,6 +47,8 @@ const dia_medio =
 document.getElementById("dia_medio")
 const dia_ruim =
 document.getElementById("dia_ruim");
+const btn_ver_estatistica =
+document.getElementById("btn_ver_estatistica");
 
 let bom = localStorage.getItem("bom");
 let medio = localStorage.getItem("medio");
@@ -74,6 +76,10 @@ btn_ruim.onclick = function(){
   mostrar_tela("tela_estatisticas");
 }
 
+btn_ver_estatistica.onclick = function(){
+  mostrar_tela("tela_estatisticas");
+}
+
 const btn_atualizar =
 document.getElementById("btn_atualizar");
 
@@ -82,12 +88,6 @@ btn_atualizar.onclick = function(){
   dia_medio.innerText = `Condição Regular: ${medio}`;
   dia_ruim.innerText = `Condição Compremetida: ${ruim}`;
 }
-
-
-
-
-
- 
 //---------------------------------------------
 
 
