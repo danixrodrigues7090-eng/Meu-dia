@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu dia a dia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="tela_01" class="tela" style="display: block;">
+    <h1 class="titulo">Entre em sua conta</h1>
+    <input type="text" id="chute_username" placeholder="Digite o username:">
+    <br>
+    <input type="number" id="chute_senha" placeholder="Digite a senha:">
+    <br>
+    <button id="btn_enviar">Entrar</button>
+  </div>
+  
+  <div id="tela_02" class="tela" style="display: none;">
+    <h1 class="titulo">Como foi meu dia?</h1>
+    <br>
+    <button id="btn_bom" class="tres_btns">Saudável</button>
+    <br>
+    <button id="btn_medio" class="tres_btns">Um pouco saudável</button>
+    <br>
+    <button id="btn_ruim" class="tres_btns">Nada Saudável</button>
+  </div>
+  
+  <div id="tela_estatisticas" class="tela">
+    <h1 class="titulo">Estatisticas do meu dia a dia</h1>
+    <div id="caixa_texto_estatistica">
+        <p id="dia_bom">Condição Estável: 0</p>
+        <p id="dia_medio">Condição Regular: 0</p>
+        <p id="dia_ruim">Condiação compremetida: 0 </p>
+        <button id="btn_atualizar">Atualizar Informações</button>
+      </div>
+  </div>
+  
+  <div id="tela_erro" class="tela">
+    <h1 class="titulo">Voce entrou na tela de erro!</h1>
+    <br>
+    <p class="caixa_erro">Parece que voce entrou na tela de erro?
+      Ao voce errar o username ou senha voce entra na tela de erro! para garantir a segurança do proprietario! Pois bem! ao entrar na tela de erro voce pode tentar entrar na sua conta novamente! 
+    </p>
+    <br>
+    <button id="btn_tentar_novamente">Tentar novamente</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
